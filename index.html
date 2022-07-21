@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Portfolio</title>
+</head>
+
+<body class="text-base">
+  <div class="absolute top-0 bottom-0 right-0 left-0 -z-10 overflow-x-hidden">
+    <div class="shape-header-top"></div>
+    <div class="shape-header-bottom"></div>
+  </div>
+
+  <header class="py-6 relative overflow-hidden">
+    <div class="container flex flex-wrap justify-between items-center px-5 md:px-14 lg:px-24">
+      <div class="font-bold text-base text-2xl">shin.riyadi</div>
+      <div class="hidden md:flex items-center gap-2 space-x-10 ">
+        <a href="#" class="nav active">Home</a>
+        <a href="#work" class="nav">My Work</a>
+        <a href="#about" class="nav">About Me</a>
+        <a href="#contact">
+          <button class="border-2 border-primary font-medium py-0.5 px-1.5 rounded-lg transition-all duration-300 hover:bg-primary hover:text-white">
+            Contact Me
+          </button>
+        </a>
+      </div>
+      <div class="md:hidden cursor-pointer nav-toggle-open">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 18H3v-2h9v2Zm9-5H3v-2h18v2Zm0-5h-9V6h9v2Z"></path>
+        </svg>
+      </div>
+      <div class="md:hidden nav-mobile z-10 bg-white/90 backdrop-blur-sm">
+        <div class="px-5 mt-6">
+          <svg class="h-6 w-6 nav-toggle-close cursor-pointer ml-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M6 18L18 6m0 12L6 6"></path>
+          </svg>
+        </div>
+        <div class="md:hidden flex flex-col items-center px-5 mt-5 gap-y-10">
+          <a href="#" class="nav active">Home</a>
+          <a href="#work" class="nav">My Work</a>
+          <a href="#about" class="nav">About Me</a>
+          <a href="#contact">
+            <button class="border-2 border-primary font-medium py-1 px-2 rounded-lg transition-all duration-300 hover:bg-primary hover:text-white">
+              Contact Me
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="container my-16 md:my-32 px-5 md:px-14 lg:px-24">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 lg:gap-10 items-center justify-center">
+      <div class="order-last sm:order-first" data-aos="fade-right">
+        <div class="text-3xl lg:text-4xl text-center sm:text-left font-bold mb-8">
+          <!-- Building <br> Beautiful <br> Responsive Web -->
+          <span class="leading-snug">
+            Code and Implement Your Designs to Beautiful Website Experience
+          </span>
+        </div>
+        <div class="flex items-center md:items-start">
+          <a href="#work"
+            class="mx-auto sm:mx-0 inline-flex items-center gap-2 bg-primary shadow-lg hover:translate-y-0.5 transition-all duration-100 py-3 px-5 rounded-lg text-xs font-bold text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-4 h-4" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor" d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12Z"></path>
+            </svg>
+            Show More
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center" data-aos="fade-left">
+        <img src="./images/illustration.png" class="w-2/3 sm:w-full sm:max-w-full lg:w-[500px] mx-auto px-2" alt="illustration">
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-16 px-5 md:px-14 lg:px-24" id="work">
+    <div class="w-auto inline-block shadow-lg mb-10">
+      <h1 class="text-primary-dark font-bold text-xl">My Work</h1>
+      <div class="w-full h-1.5 mt-1 bg-primary-dark rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-6">
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="0">
+        <img src="./images/github-finder.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+          <!-- link -->
+          <a href="http://shinriyadi.github.io/github-finder" class="btn" target="_blank">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="100">
+        <img src="./images/supercar-id.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+          <!-- link -->
+          <a href="http://supercar.id" class="btn" target="_blank">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="200">
+        <img src="./images/jerseykita-com.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+          <!-- link -->
+          <a href="http://jerseykita.com" class="btn" target="_blank">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="300">
+        <img src="./images/esda.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+        </div>
+      </div>
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="400">
+        <img src="./images/biru-id.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+          <!-- link -->
+          <a href="http://biru.id" class="btn" target="_blank">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="500">
+        <img src="./images/printkaosbandung-com.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+          <!-- link -->
+          <a href="http://printkaosbandung.com" class="btn" target="_blank">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden" data-aos="flip-left" data-aos-duration="300" data-aos-delay="600">
+        <img src="./images/dokter-my.png" class="w-full h-28 lg:h-48 object-cover" alt="">
+        <div class="bg-overlay backdrop-blur-sm">
+          <!-- link -->
+          <a href="http://dokter.my" class="btn" target="_blank">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m10 17.55l-1.77 1.72a2.47 2.47 0 0 1-3.5-3.5l4.54-4.55a2.46 2.46 0 0 1 3.39-.09l.12.1a1 1 0 0 0 1.4-1.43a2.75 2.75 0 0 0-.18-.21a4.46 4.46 0 0 0-6.09.22l-4.6 4.55a4.48 4.48 0 0 0 6.33 6.33L11.37 19A1 1 0 0 0 10 17.55ZM20.69 3.31a4.49 4.49 0 0 0-6.33 0L12.63 5A1 1 0 0 0 14 6.45l1.73-1.72a2.47 2.47 0 0 1 3.5 3.5l-4.54 4.55a2.46 2.46 0 0 1-3.39.09l-.12-.1a1 1 0 0 0-1.4 1.43a2.75 2.75 0 0 0 .23.21a4.47 4.47 0 0 0 6.09-.22l4.55-4.55a4.49 4.49 0 0 0 .04-6.33Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-16 px-5 md:px-14 lg:px-24" id="about">
+    <div class="w-auto inline-block shadow-lg mb-5">
+      <h1 class="text-primary-dark font-bold text-xl">About Me</h1>
+      <div class="w-full h-1.5 mt-1 bg-primary-dark rounded-full"></div>
+    </div>
+
+    <div class="flex flex-wrap gap-10 sm:gap-10 lg:gap-24 md:flex-nowrap justify-center md:justify-between items-center mb-10" data-aos="fade-right">
+      <img src="./images/avatar.png" class="max-w-[250px] sm:max-w-[180px] lg:max-w-[300px]" alt="Avatar">
+      <div>
+        <h4 class="text-3xl font-bold">
+          Hi, I am Muhshin, <br>
+          Frontend Web Developer
+        </h4>
+        <p class="text-base-gray mt-3 mb-4 text-sm" data-aos="fade-left">
+          Passionate front-end web developer with 3 years of experience using JavaScript, HTML, and CSS to build all aspects of the user experience and user interface.
+          Adept to a highly collaborative work environment, finding solutions, and determining customer satisfaction.
+        </p>
+      </div>
+    </div>
+
+    <div data-aos="fade-right">
+      <h2 class="text-lg font-medium text-primary-dark mb-2">The languages I speak:</h2>
+      <div class="flex flex-wrap justify-center lg:justify-start gap-6 mb-6">
+        <button title="HTML">
+          <svg class="h-14 w-auto fill-container text-base-gray hover:text-[#ea7557]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m12 18.178l4.62-1.256l.623-6.778H9.026L8.822 7.89h8.626l.227-2.211H6.325l.636 6.678h7.82l-.261 2.866l-2.52.667l-2.52-.667l-.158-1.844h-2.27l.329 3.544L12 18.178zM3 2h18l-1.623 18L12 22l-7.377-2L3 2z">
+            </path>
+          </svg>
+        </button>
+        <button title="CSS">
+          <svg class="h-14 w-auto fill-container text-base-gray hover:text-[#2172b6]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="m64 32l35 403.22L255.77 480L413 435.15L448 32Zm290.68 334.9L256.07 395l-98.46-28.24l-6.75-77.76h48.26l3.43 39.56l53.59 15.16l.13.28l53.47-14.85l5.64-64.15H203l-4-50h120.65l4.35-51H140l-4-49h240.58Z">
+            </path>
+          </svg>
+        </button>
+        <button title="JavaScript">
+          <svg class="h-14 w-auto fill-container text-base-gray hover:text-[#f5de2e]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor" fillRule="evenodd"
+              d="M0 0h24v24H0V0Zm18.347 20.12c-1.113 0-1.742-.58-2.225-1.37l-1.833 1.065c.662 1.308 2.015 2.306 4.11 2.306c2.142 0 3.737-1.112 3.737-3.143c0-1.883-1.082-2.72-2.998-3.543l-.564-.241c-.968-.42-1.387-.693-1.387-1.37c0-.547.42-.966 1.08-.966c.647 0 1.064.273 1.451.966l1.756-1.127c-.743-1.307-1.773-1.806-3.207-1.806c-2.014 0-3.303 1.288-3.303 2.98c0 1.835 1.08 2.704 2.708 3.397l.564.242c1.029.45 1.642.724 1.642 1.497c0 .646-.597 1.113-1.531 1.113Zm-8.74-.015c-.775 0-1.098-.53-1.452-1.16l-1.836 1.112c.532 1.126 1.578 2.06 3.383 2.06c1.999 0 3.368-1.063 3.368-3.398v-7.7h-2.255v7.67c0 1.127-.468 1.416-1.209 1.416Z"
+              clipRule="evenodd"></path>
+          </svg>
+        </button>
+        <button title="php">
+          <svg class="h-14 w-auto fill-container text-base-gray hover:text-[#6181b6]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 5.5C5.271 5.5 0 8.355 0 12s5.271 6.5 12 6.5s12-2.855 12-6.5s-5.271-6.5-12-6.5Zm-1.246 2h1.31l-.416 2h1.17c.742 0 1.24.104 1.524.363c.277.256.361.676.25 1.248l-.52 2.389H12.74l.479-2.209c.058-.303.035-.514-.067-.625c-.101-.111-.324-.166-.658-.166h-1.049l-.633 3H9.5l1.254-6ZM5 9.5h2.666c1.271 0 2.041.852 1.74 2.123C9.056 13.1 8.12 13.5 6.396 13.5h-.824L5.311 15H3.986L5 9.5Zm10.5 0h2.666c1.271 0 2.041.852 1.74 2.123c-.35 1.477-1.287 1.877-3.01 1.877h-.824l-.261 1.5h-1.325L15.5 9.5Zm-9.365 1l-.377 2h.855c.74 0 1.428-.084 1.543-1.188c.043-.427-.135-.812-.99-.812H6.135Zm10.5 0l-.377 2h.855c.74 0 1.428-.084 1.543-1.188c.043-.427-.134-.812-.99-.812h-1.031Z">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1000">
+      <h2 class="text-lg font-medium text-primary-dark mb-2">The tools I use:</h2>
+      <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+        <button title="Vue">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#067856]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor" d="m6.976 3.433l3.646.002l1.384 1.956l1.374-1.956l3.643-.001l-5 8.406l-5.047-8.407z"></path>
+            <path fill="currentColor" d="M14.6 2.43a1 1 0 0 0-.819.425L12 5.39l-1.791-2.537a1 1 0 0 0-.817-.423H6.38l3.55 5.92l2.1 3.5l2.07-3.5l3.52-5.92H14.6z"></path>
+            <path fill="currentColor"
+              d="m22.001 2.438l-4.384-.003L14.1 8.35l-2.07 3.5l-2.1-3.5l-3.546-5.913l-4.39.024a1 1 0 0 0-.857 1.506l10.02 17.105a1 1 0 0 0 1.727-.002l9.98-17.128a1 1 0 0 0-.863-1.504z" opacity=".5">
+            </path>
+          </svg>
+        </button>
+        <button title="Sass">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#cc6699]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M511.78 328.07c-1.47-11.92-7.51-22.26-18-30.77a3.58 3.58 0 0 0-.43-.44l-.53-.38l-.17-.12l-5.57-4l-.19-.14l-.71-.5a3.5 3.5 0 0 0-.83-.35c-17.62-10.49-46.79-17.84-91.42-2.09c-10.65-17.92-11.86-32.28-4.73-54.28c1.27-3.83.09-6.36-3.71-8c-7.64-3.25-18.1-1.59-25.52.37c-3.46.9-5.54 2.86-6.2 5.83c-4.7 22-18.36 42.1-31.57 61.5l-.78 1.14c-8.14-17.26-6.45-30.63-.78-47.38c1.13-3.34.24-5.56-2.89-7.22c-8.74-4.51-21.85-1.41-27.07.13c-6.62 1.93-13.72 19.82-21.65 41.24c-2 5.39-3.72 10-4.75 12.15c-2.45 5-4.79 10.7-7.27 16.75c-5.6 13.69-11.91 29.1-20.93 38.78c-3.28-7.25 1.88-18.68 6.89-29.77c5.93-13.11 11.53-25.5 5.08-33.41a11.82 11.82 0 0 0-8.33-4.32a13.26 13.26 0 0 0-6.15 1c.67-5.65.7-10.11-.95-15.5c-2.36-7.69-8.49-12-16.93-11.77c-19.22.56-35.48 14.88-45.75 26.8c-6.84 8-22 14.1-35.31 19.45c-5.26 2.23-10.26 4.23-14.43 6.23c-6.65-5.62-15.1-11.29-24-17.28c-25-16.78-53.33-35.81-54.31-61.61c-1.4-38.11 42-65.14 79.88-84.43c28.71-14.6 53.67-24.28 76.31-29.57c31.8-7.43 58.66-5.93 79.82 4.44c11.58 5.67 17 18 13.56 30.68c-9 32.95-46.29 55.53-78.18 65.69c-19.21 6.12-35.56 8.68-50 7.84c-18.1-1.05-32.88-10.13-39.2-14a21.18 21.18 0 0 0-3.2-1.8l-.29-.07a3.21 3.21 0 0 0-3.19 1c-1.3 1.55-.84 4-.37 5.24c6.15 16.07 18.85 26.22 37.74 30.17a92.09 92.09 0 0 0 18.78 1.79c44.21 0 100.62-25.49 121.34-46.48c14.13-14.3 24.42-29 28.68-54.35c4.45-26.55-13.55-45-31.89-53.5c-44.57-20.57-95.19-12.44-129.81-2c-40.5 12.21-82.4 34.41-114.94 60.93c-40.12 32.67-54.62 63-43.12 90.25c11.81 27.93 40.61 45.4 68.46 62.3c9 5.45 17.56 10.64 25.27 16c-2.32 1.13-4.69 2.28-7.1 3.43c-23.38 11.33-49.9 24.08-64.61 45.15c-10.68 15.35-12.68 30.63-5.94 45.42c3.6 7.87 10 13.21 18.89 15.87A50 50 0 0 0 53 432c17.31 0 36.36-7 46.73-13.47c18.32-11.5 30.19-26.94 35.29-45.89c4.54-16.86 3.45-33.61-3.15-48.56l22.45-11.32c-10.83 36-2.53 57.5 6.59 69.36c3.36 4.37 9.42 7 16.19 7.12s13-2.43 16.52-6.77c6.66-8.25 11.58-17.9 16.11-27.55c-.24 6.3.06 12.68 2.21 18.09c1.93 4.87 5.11 8.1 9.21 9.34c4.36 1.33 9.47.21 14.39-3.15c22.17-15.17 37.33-51.58 49.51-80.85c1.73-4.16 3.39-8.16 5-11.9a152.5 152.5 0 0 0 12.5 31.07c1.18 2.14 1.08 3.08-.52 4.84c-2.41 2.64-5.77 5.83-9.33 9.21c-10.78 10.23-24.2 23-26 34.23c-.7 4.5 2.4 8.6 7.21 9.53c14.47 2.88 31.9-1.33 46.64-11.25c13.4-9 18.44-21.55 15-37.19c-3.33-15.06 4.27-33.76 22.59-55.62c3 12.53 7 22.66 12.52 31.53l-.15.12c-13.34 11.65-31.62 27.6-28.78 46.95a13.35 13.35 0 0 0 5.58 9.22a14.22 14.22 0 0 0 11.2 2.06c17.47-3.67 30.62-11.06 40.18-22.57s6.07-24.27 2.85-34.17c25-6.78 47.26-6.61 68.1.5c11.7 4 20.09 10.57 24.93 19.64c6.09 11.41 2.8 21.94-9.29 29.65c-3.71 2.37-5.5 3.82-5.61 5.65a2.65 2.65 0 0 0 1 2.23c1.4 1.15 5.72 3.15 15.49-3c9-5.65 14.28-13.34 15.63-23a39 39 0 0 0-.01-8.01Zm-399.73 25.06l-.1 1.28c-1.56 14.64-9 27.4-22.15 38c-8.26 6.66-17.23 10.75-25.25 11.53c-5.6.54-9.67-.22-12.09-2.27c-1.81-1.53-2.78-3.82-3-7c-1.64-25.48 38.32-50.8 60.81-59.13a51.39 51.39 0 0 1 1.78 17.59Zm102.35-71.86c-3.7 21.09-14.49 60.9-31.45 76.35c-.81.74-1.49 1-1.8.93s-.55-.44-.8-1c-5.66-13.12-3.57-35.28 5-52.69c6.59-13.42 16-22.31 26.52-25a5.29 5.29 0 0 1 1.34-.19a1.58 1.58 0 0 1 1 .27a1.64 1.64 0 0 1 .19 1.33Zm83.49 76.88c-3.19 3.33-7.56 2.88-6.53 1.66l16.24-17.24c-1.31 5.93-5.18 10.84-9.71 15.58Zm67.37-14.91a14.07 14.07 0 0 1-4.93 1.39c-.46-9.07 8.33-19.28 17-26.09c2.33 9.46-2.44 19.46-12.07 24.7Z">
+            </path>
+          </svg>
+        </button>
+        <button title="Vite">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#8a6df8]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 510 512">
+            <path fill="currentColor"
+              d="M493.89 58.275L355.178 83.558L379.282 0L186.79 37.718l-2.999 50.64L15.145 58.214C3.53 57.538-3.238 65.879 1.558 77.46l244.056 427.983c5.253 8.575 17.347 8.91 22.65 0L507.575 77.419c5.4-9.676-2.874-21.018-13.685-19.144zm-237 435.435L17.87 74.556l164.993 29.491l-7.778 131.365l67.632-15.608l-18.858 92.344l51.374-15.608l-25.495 123.397c-1.27 8.069 9.241 12.362 14.44.812l150.22-299.792l-74.135 14.308l10.086-34.962l140.91-25.684L256.89 493.71z">
+            </path>
+          </svg>
+        </button>
+        <button title="Git">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#de4c36]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 15 15">
+            <path fill="currentColor"
+              d="M6.44.854a1.5 1.5 0 0 1 2.12 0l5.586 5.585a1.5 1.5 0 0 1 0 2.122l-5.585 5.585a1.5 1.5 0 0 1-2.122 0L.854 8.561a1.5 1.5 0 0 1 0-2.122L4.793 2.5l1.353 1.353A1.5 1.5 0 0 0 7 5.914v3.171a1.5 1.5 0 1 0 1 0v-3.17c.05-.018.1-.038.147-.061l1 1a1.5 1.5 0 1 0 .707-.707l-1-1a1.5 1.5 0 0 0-2-2L5.5 1.792l.94-.94Z">
+            </path>
+          </svg>
+        </button>
+        <button title="Visual Studio Code">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#44acf2]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63l-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12L.326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128l9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z">
+            </path>
+          </svg>
+        </button>
+        <button title="Ubuntu">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#dd4a33]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10m-7.66-4.26c.58.33 1.31.13 1.66-.44c.31-.57.12-1.3-.46-1.64c-.57-.33-1.31-.16-1.64.44c-.33.57-.13 1.31.44 1.64m-2.46 7.76c-.53 0-1.03-.11-1.47-.32l-.84 1.5c.7.32 1.48.54 2.31.54c.49 0 .95-.07 1.4-.19c.08-.49.36-.93.82-1.19c.46-.27.98-.29 1.44-.12c.89-.87 1.46-2.06 1.55-3.39l-1.71-.02a3.506 3.506 0 0 1-3.5 3.19m0-7c1.84 0 3.34 1.39 3.5 3.19l1.71-.03a5.209 5.209 0 0 0-1.55-3.38c-.46.17-.99.14-1.44-.12c-.46-.26-.74-.71-.82-1.19c-.45-.12-.91-.19-1.4-.19c-.83 0-1.61.19-2.31.54l.84 1.5c.44-.21.94-.32 1.47-.32M8.37 12c0-1.19.59-2.24 1.49-2.87L9 7.65a5.217 5.217 0 0 0-2.17 3.04c.38.31.62.78.62 1.31s-.24 1-.62 1.31A5.195 5.195 0 0 0 9 16.34l.86-1.47c-.9-.63-1.49-1.68-1.49-2.87m5.97 4.26c-.57.33-.77 1.06-.44 1.64c.33.57 1.07.77 1.64.44c.58-.34.77-1.07.46-1.64c-.35-.58-1.08-.77-1.66-.44M5.76 10.8c-.66 0-1.2.54-1.2 1.2c0 .66.54 1.2 1.2 1.2c.67 0 1.2-.54 1.2-1.2c0-.66-.53-1.2-1.2-1.2Z">
+            </path>
+          </svg>
+        </button>
+        <button title="Bootstrap">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#8a6df8]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.13em" height="1em"
+            viewBox="0 0 576 512">
+            <path fill="currentColor"
+              d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5c32.8-.1 50.9-13.3 50.9-36.9zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1C508.3 60 484.5 32 452.5 32H123.7C91.6 32 67.9 60.1 69 90.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3.3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5c-26.3-2.5-42.5-22.1-52-53.1zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3c0 42.1-31.3 67.5-83.2 67.5zm-10-108.7h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5c0-25.7-18.6-38.9-54.5-38.9z">
+            </path>
+          </svg>
+        </button>
+        <button title="Tailwind">
+          <svg class="w-16 h-auto fill-current text-base-gray hover:text-[#59b5bb]" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em"
+            viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8c1.2-1.6 2.6-2.2 4.2-1.8c.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8c-1.2 1.6-2.6 2.2-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8c1.2-1.6 2.6-2.2 4.2-1.8c.913.228 1.565.89 2.288 1.624c1.177 1.194 2.538 2.576 5.512 2.576c3.2 0 5.2-1.6 6-4.8c-1.2 1.6-2.6 2.2-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 mt-16 pt-24 pb-10 md:pb-24">
+    <div class="container px-5 md:px-14 lg:px-24" id="contact">
+      <div class="w-auto inline-block shadow-lg mb-14">
+        <h1 class="text-primary-dark font-bold text-xl">Cantact Me</h1>
+        <div class="w-full h-1.5 mt-1 bg-primary-dark rounded-full"></div>
+      </div>
+
+      <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-24">
+        <form action="https://www.actionforms.io/e/r/shinriyad" method="post">
+          <div class="mb-6">
+            <label class="block mb-1 font-medium text-base-gray" for="name">
+              Name <span class="">*</span>
+            </label>
+            <input class="w-full border border-gray-300 focus:rounded-none px-4 py-2" id="name" name="name" placeholder="Input Name" required="required" type="text" />
+          </div>
+          <div class="mb-6">
+            <label class="block mb-1 font-medium text-base-gray" for="email">
+              Email <span class="">*</span>
+            </label>
+            <input class="w-full border border-gray-300 focus:rounded-none px-4 py-2" id="name" name="email" placeholder="Input email" required="required" type="email" />
+          </div>
+          <div class="mb-4">
+            <label class="block mb-1 font-medium text-base-gray" for="message">
+              Message <span class="">*</span>
+            </label>
+            <textarea class="w-full border border-gray-300 focus:rounded-none px-4 py-2" rows="4" id="message" name="message" placeholder="Send me a Message" required="required"></textarea>
+          </div>
+          <div class="">
+            <button type="submit"
+              class="mx-auto sm:mx-0 inline-flex items-center gap-2 bg-primary shadow-lg hover:translate-y-0.5 transition-all duration-100 py-3 px-8 rounded-lg text-xs font-bold text-white">
+              <svg class="h-4 w-4 text-white mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8l-8 6l-8.054-2.685z">
+                </path>
+              </svg>
+              <span class="">Send it!</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-6 flex flex-col">
+          <a href="mailto:shin.riyadi@gmail.com" class="text-base-gray hover:text-primary items-center mb-5 inline-flex">
+            <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-.41 2l-5.88 5.88a1 1 0 0 1-1.42 0L5.41 6ZM20 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7.41l5.88 5.88a3 3 0 0 0 4.24 0L20 7.41Z">
+              </path>
+            </svg>
+            shin.riyadi@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/muhshin-riyadi/" target="_blank" class="text-base-gray hover:text-[#0966c2] items-center mb-5 inline-flex">
+            <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z">
+              </path>
+            </svg>
+            Muhshin Riyadi
+          </a>
+          <a href="https://github.com/shinriyadi" target="_blank" class="text-base-gray hover:text-base items-center mb-5 inline-flex">
+            <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M12 2.247a10 10 0 0 0-3.162 19.487c.5.088.687-.212.687-.475c0-.237-.012-1.025-.012-1.862c-2.513.462-3.163-.613-3.363-1.175a3.636 3.636 0 0 0-1.025-1.413c-.35-.187-.85-.65-.013-.662a2.001 2.001 0 0 1 1.538 1.025a2.137 2.137 0 0 0 2.912.825a2.104 2.104 0 0 1 .638-1.338c-2.225-.25-4.55-1.112-4.55-4.937a3.892 3.892 0 0 1 1.025-2.688a3.594 3.594 0 0 1 .1-2.65s.837-.262 2.75 1.025a9.427 9.427 0 0 1 5 0c1.912-1.3 2.75-1.025 2.75-1.025a3.593 3.593 0 0 1 .1 2.65a3.869 3.869 0 0 1 1.025 2.688c0 3.837-2.338 4.687-4.563 4.937a2.368 2.368 0 0 1 .675 1.85c0 1.338-.012 2.413-.012 2.75c0 .263.187.575.687.475A10.005 10.005 0 0 0 12 2.247Z">
+              </path>
+            </svg>
+            shinriyadi
+          </a>
+          <div class="text-base-gray items-center mb-5 inline-flex">
+            <svg class="h-5 w-5 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M12 10.8a2 2 0 1 0-2-2a2 2 0 0 0 2 2Zm-.71 6.91a1 1 0 0 0 1.42 0l4.09-4.1a6.79 6.79 0 1 0-9.6 0ZM7.23 8.34a4.81 4.81 0 0 1 2.13-3.55a4.81 4.81 0 0 1 5.28 0a4.82 4.82 0 0 1 .75 7.41L12 15.59L8.61 12.2a4.77 4.77 0 0 1-1.38-3.86ZM19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z">
+              </path>
+            </svg>
+            Special Region of Yogyakarta, Indonesia
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
